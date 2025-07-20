@@ -22,7 +22,7 @@ This project detects players and the ball from two video feeds (`broadcast.mp4` 
 ---
 
 ## 🗂️ Project Structure
-
+```
 Player_detection/
 ├── model/
 │   └── best.pt
@@ -35,6 +35,7 @@ Player_detection/
 │   └── tacticam.mp4
 ├── main.py
 └── utils.py
+```
 
 
 ## 🔧 Setup Instructions
