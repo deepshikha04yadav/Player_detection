@@ -86,7 +86,7 @@ python main.py
 ```
 #### The script will:
 
-*Process both videos
+* Process both videos
 * Match players
 * Print the mapping (e.g., Tacticam ID 3 → Broadcast ID 7)
 * Save two annotated videos in the output/ folder
