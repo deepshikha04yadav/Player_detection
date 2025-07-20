@@ -52,7 +52,7 @@ If requirements.txt doesn't exist, run:
     pip install ultralytics opencv-python deep_sort_realtime numpy scipy
 
 
-2. Download the Object Detection Model
+### 2. Download the Object Detection Model
 Download the fine-tuned YOLOv11 model from this link:
 
 🔗 https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view
@@ -61,6 +61,10 @@ Save it as:
 ```
 model/best.pt
 ```
+### 3. Clone Sort model
+Clone the model and add in the repository
+
+🔗 https://github.com/abewley/sort
 
 ## 🚀 How It Works
 ### Step 1: Detection
