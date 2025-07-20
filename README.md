@@ -58,38 +58,36 @@ Download the fine-tuned YOLOv11 model from this link:
 🔗 https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVcMD/view
 
 Save it as:
-
+```
 model/best.pt
+```
 
-
-🚀 How It Works
-Step 1: Detection
+## 🚀 How It Works
+### Step 1: Detection
 The YOLOv11 model detects players (class 0) in each frame of both videos.
 
-Step 2: Tracking
+### Step 2: Tracking
 Deep SORT tracks players in each video and assigns them unique temporary IDs.
 
-Step 3: Feature Extraction
+### Step 3: Feature Extraction
 For each detected player, we extract appearance features using color histograms.
 
-Step 4: Matching
+### Step 4: Matching
 We use cosine similarity between appearance features to map players from the tacticam view to the corresponding identities in the broadcast view.
 
-Step 5: Visualization
+### Step 5: Visualization
 Two output videos are generated:
+  * broadcast_output.mp4: shows original tracked IDs from broadcast.
+  * tacticam_output.mp4: uses the mapping to show consistent player IDs as in broadcast.
 
-broadcast_output.mp4: shows original tracked IDs from broadcast.
-
-tacticam_output.mp4: uses the mapping to show consistent player IDs as in broadcast.
-
-🖥️ Running the Project
-
+## 🖥️ Running the Project
+```
 python main.py
+```
+#### The script will:
 
-The script will:
-
-    Process both videos
-    Match players
-    Print the mapping (e.g., Tacticam ID 3 → Broadcast ID 7)
-    Save two annotated videos in the output/ folder
+*Process both videos
+* Match players
+* Print the mapping (e.g., Tacticam ID 3 → Broadcast ID 7)
+* Save two annotated videos in the output/ folder
 
